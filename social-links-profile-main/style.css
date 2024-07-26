@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(0, 0%, 8%);
+}
+.page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 460px;
+  height: 650px;
+  background-color: hsl(0, 0%, 12%);
+  color: white;
+  border-radius: 10px;
+  /* padding: 30px 30px 30px 30px; */
+}
+.img-contant {
+  text-align: center;
+  line-height: 30px;
+}
+.information a {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.img-contant .introduction h2 {
+  line-height: 60px;
+}
+.img-contant .random-text {
+  line-height: 60px;
+}
+.img-contant img {
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.buttons {
+  display: block;
+  width: 400px;
+  height: 53px;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: hsl(0, 0%, 20%);
+  margin: auto;
+  outline: 0;
+  transition: 0.8s;
+  border: 0;
+  cursor: pointer;
+}
+.buttons a {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.buttons {
+  margin-top: 15px;
+}
+
+.buttons:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
+}
+
+@media only screen and (max-width: 525px) {
+  .container {
+    width: 315px;
+    height: 650px;
+    background-color: hsl(0, 0%, 12%);
+    color: white;
+    border-radius: 10px;
+  }
+  .buttons
+  {
+    width: 270px;
+    height: 53px;
+    font-size: 15px;
+  }
+  .container .img-contant img
+  {
+    width: 70px;
+  }
+}
+
+
+@media only screen and (max-width: 250px)
+{
+    .container {
+        width: 200px;
+        height: 650px;
+        background-color: hsl(0, 0%, 12%);
+        color: white;
+        border-radius: 10px;
+      }
+      .buttons
+      {
+        width: 180px;
+        height: 40px;
+        font-size: 15px;
+      }
+      .container .img-contant img
+      {
+        width: 50px;
+      }
+}
